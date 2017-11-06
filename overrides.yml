@@ -1,8 +1,129 @@
-# This section of the file allows to modify the VCS information that is defined
-# in the package sets. Below is an example to change the branch name for a given
-# package
-#
-# overrides:
-#   - rtt
-#     branch: test
-#  
+version_control:
+
+    ### Bundles ###
+
+    - bundles/exoter:
+      github: exoter-rover/bundles-exoter
+      branch: rock-master
+
+    - bundles/hdpr:
+      github: hdpr-rover/bundles-hdpr
+
+    - bundles/dimi:
+      github: geromidg/bundles-dimi
+
+    ### Deployments ###
+
+    - exoter/orogen/exoter_deployments:
+      github: exoter-rover/exoter-orogen-exoter_deployments
+
+    - hdpr/orogen/hdpr_deployments:
+      github: hdpr-rover/hdpr-orogen-hdpr_deployments
+
+    ### SLAM ###
+
+    - slam/orogen/icp:
+      github: exoter-rover/slam-orogen-icp
+
+    - drivers/orogen/camera_bb2:
+      github: rock-drivers/drivers-orogen-camera_bb2
+
+    - perception/cartographer:
+      github: exoter-rover/perception-cartographer
+
+    - perception/orogen/cartographer:
+      github: exoter-rover/perception-orogen-cartographer
+      branch: rock-master
+
+    ### Planning ###
+
+    - simulation/vrep:
+      github: esa-prl/simulation-vrep
+
+    - simulation/orogen/simulation_vrep:
+      github: esa-prl/simulation-orogen-simulation_vrep
+
+    - planning/path_planning:
+      github: esa-prl/planning-path_planning
+      branch: rock_master
+
+    - planning/orogen/path_planning:
+      github: esa-prl/planning-orogen-path_planning
+
+    - control/orogen/locomotion_switcher:
+      github: exoter-rover/control-orogen-locomotion_switcher
+      branch: rock_master
+
+    - control/locomotion_control:
+      github: exoter-rover/control-locomotion_control
+
+    - control/orogen/locomotion_control:
+      github: exoter-rover/control-orogen-locomotion_control
+      # branch: rock_master
+
+    - control/generic_rover_manoeuvre:
+      github: rock-control/control-generic_rover_manoeuvre
+
+    - drivers/platform_driver:
+      github: exoter-rover/drivers-platform_driver
+
+    - drivers/pcan_pcie_mini:
+      type: archive
+      url: http://www.peak-system.com/fileadmin/media/linux/files/peak-linux-driver-7.15.2.tar.gz
+      update_cached_file: false
+
+    - control/orogen/wheelwalking_control:
+      github: exoter-rover/control-orogen-wheelwalking_control
+
+    - exoter/exoter_kinematics:
+      github: exoter-rover/exoter-exoter_kinematics
+
+    - control/kdl_parser:
+      github: rock-control/control-kdl_parser
+
+    - slam/odometry:
+      github: rock-slam/slam-odometry
+
+    - control/orogen/command_arbiter:
+      github: exoter-rover/control-orogen-command_arbiter
+      branch: rock-master
+
+    - control/orogen/slippage_estimator:
+      github: exoter-rover/control-orogen-slippage_estimator
+      branch: rock_master
+
+    - control/orogen/ptu_control:
+      github: exoter-rover/control-orogen-ptu_control
+
+    - control/orogen/motion_translator:
+      github: hdpr-rover/control-orogen-motion_translator
+      branch: rock-master
+
+overrides:
+
+    - drivers/controldev:
+      branch: onedimensional
+
+    - drivers/orogen/controldev:
+      branch: onedimensional
+
+    - control/waypoint_navigation:
+      github: exoter-rover/control-waypoint_navigation
+      branch: rock_master
+
+    - control/orogen/waypoint_navigation:
+      github: exoter-rover/control-orogen-waypoint_navigation
+      branch: rock_master
+
+    - perception/orogen/viso2:
+      github: exoter-rover/perception-orogen-viso2
+
+    - perception/stereo:
+      github: hdpr-rover/perception-stereo
+      branch: rock_master
+
+    - perception/orogen/stereo:
+      github: hdpr-rover/perception-orogen-stereo
+      branch: rock_master
+      # branch: pc_viz_test
+

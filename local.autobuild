@@ -1,0 +1,61 @@
+cmake_package "simulation/vrep"
+orogen_package "simulation/orogen/simulation_vrep"
+cmake_package "planning/path_planning"
+orogen_package "planning/orogen/path_planning"
+orogen_package "control/orogen/locomotion_switcher"
+cmake_package "control/locomotion_control"
+orogen_package "control/orogen/locomotion_control"
+cmake_package "control/generic_rover_manoeuvre"
+cmake_package "drivers/platform_driver"
+orogen_package "control/orogen/wheelwalking_control"
+cmake_package "exoter/exoter_kinematics"
+cmake_package "control/kdl_parser"
+cmake_package "slam/odometry"
+cmake_package "control/waypoint_navigation"
+orogen_package "control/orogen/waypoint_navigation"
+orogen_package "control/orogen/command_arbiter"
+orogen_package "control/orogen/slippage_estimator"
+orogen_package "control/orogen/ptu_control"
+orogen_package "control/orogen/motion_translator"
+
+orogen_package "slam/orogen/icp"
+orogen_package "drivers/orogen/camera_bb2"
+orogen_package "perception/orogen/viso2"
+orogen_package "perception/stereo"
+orogen_package "perception/orogen/stereo"
+cmake_package "perception/cartographer"
+orogen_package "perception/orogen/cartographer"
+
+bundle_package 'bundles/exoter'
+bundle_package 'bundles/hdpr'
+bundle_package 'bundles/dimi'
+
+orogen_package 'exoter/orogen/exoter_deployments'
+orogen_package 'hdpr/orogen/hdpr_deployments'
+
+import_package 'drivers/pcan_pcie_mini' do |pkg|
+    def pkg.prepare
+        super
+
+        isolate_errors do
+            build
+            progress_done
+        end
+    end
+
+    def pkg.build
+        in_dir (srcdir) do
+            run("build", Autobuild.tool(:make), 'NET=NO')
+        end
+    end
+    def pkg.install
+        include_install_prefix = File.join(prefix, "include", name.split('/')[1])
+        FileUtils.mkdir_p include_install_prefix
+
+        FileUtils.install(File.join(srcdir, "lib","libpcan.h"), include_install_prefix)
+        FileUtils.install(File.join(srcdir, "driver","pcan.h"), include_install_prefix)
+
+        FileUtils.mkdir_p File.join(prefix, "lib")
+        FileUtils.install(File.join(srcdir, "lib","libpcan.so"), File.join(prefix, "lib"))
+    end
+end
