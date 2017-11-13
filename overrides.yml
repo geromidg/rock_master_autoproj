@@ -22,9 +22,6 @@ version_control:
 
     ### SLAM ###
 
-    - slam/orogen/icp:
-      github: exoter-rover/slam-orogen-icp
-
     - drivers/orogen/camera_bb2:
       github: rock-drivers/drivers-orogen-camera_bb2
 

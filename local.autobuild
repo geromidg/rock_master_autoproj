@@ -1,3 +1,17 @@
+bundle_package 'bundles/exoter'
+bundle_package 'bundles/hdpr'
+bundle_package 'bundles/dimi'
+
+orogen_package 'exoter/orogen/exoter_deployments'
+orogen_package 'hdpr/orogen/hdpr_deployments'
+
+orogen_package "drivers/orogen/camera_bb2"
+orogen_package "perception/orogen/viso2"
+orogen_package "perception/stereo"
+orogen_package "perception/orogen/stereo"
+cmake_package "perception/cartographer"
+orogen_package "perception/orogen/cartographer"
+
 cmake_package "simulation/vrep"
 orogen_package "simulation/orogen/simulation_vrep"
 cmake_package "planning/path_planning"
@@ -17,21 +31,6 @@ orogen_package "control/orogen/command_arbiter"
 orogen_package "control/orogen/slippage_estimator"
 orogen_package "control/orogen/ptu_control"
 orogen_package "control/orogen/motion_translator"
-
-orogen_package "slam/orogen/icp"
-orogen_package "drivers/orogen/camera_bb2"
-orogen_package "perception/orogen/viso2"
-orogen_package "perception/stereo"
-orogen_package "perception/orogen/stereo"
-cmake_package "perception/cartographer"
-orogen_package "perception/orogen/cartographer"
-
-bundle_package 'bundles/exoter'
-bundle_package 'bundles/hdpr'
-bundle_package 'bundles/dimi'
-
-orogen_package 'exoter/orogen/exoter_deployments'
-orogen_package 'hdpr/orogen/hdpr_deployments'
 
 import_package 'drivers/pcan_pcie_mini' do |pkg|
     def pkg.prepare

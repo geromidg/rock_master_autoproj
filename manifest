@@ -6,7 +6,19 @@ package_sets:
 layout:
    - rock.core
 
+   # - bundles/exoter
+   # - bundles/hdpr
    - bundles/dimi
+
+   # - exoter/orogen/exoter_deployments
+   # - hdpr/orogen/hdpr_deployments
+
+   - drivers/orogen/camera_bb2
+   - perception/orogen/viso2
+   - perception/orogen/stereo
+
+   # - perception/cartographer
+   # - perception/orogen/cartographer
 
    # - drivers/camera_basler
    # - drivers/orogen/camera_basler
@@ -31,14 +43,4 @@ layout:
    # - control/orogen/slippage_estimator
    # - control/orogen/ptu_control
    # - control/orogen/motion_translator
-
-   - slam/orogen/icp
-   - drivers/orogen/camera_bb2
-   - perception/orogen/viso2
-   - perception/orogen/stereo
-   - perception/cartographer
-   - perception/orogen/cartographer
-
-   # - exoter/orogen/exoter_deployments
-   # - hdpr/orogen/hdpr_deployments
 
