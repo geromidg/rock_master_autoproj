@@ -26,11 +26,12 @@ version_control:
       github: rock-drivers/drivers-orogen-camera_bb2
 
     - perception/cartographer:
-      github: exoter-rover/perception-cartographer
+      github: geromidg/perception-cartographer
+      branch: local_map_test
 
     - perception/orogen/cartographer:
-      github: exoter-rover/perception-orogen-cartographer
-      branch: rock-master
+      github: geromidg/perception-orogen-cartographer
+      branch: local_map_test
 
     ### Planning ###
 
@@ -122,5 +123,4 @@ overrides:
     - perception/orogen/stereo:
       github: hdpr-rover/perception-orogen-stereo
       branch: rock_master
-      # branch: pc_viz_test
 

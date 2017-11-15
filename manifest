@@ -16,9 +16,8 @@ layout:
    - drivers/orogen/camera_bb2
    - perception/orogen/viso2
    - perception/orogen/stereo
-
-   # - perception/cartographer
-   # - perception/orogen/cartographer
+   - perception/cartographer
+   - perception/orogen/cartographer
 
    # - drivers/camera_basler
    # - drivers/orogen/camera_basler
