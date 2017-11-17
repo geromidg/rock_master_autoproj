@@ -14,13 +14,16 @@ layout:
    # - hdpr/orogen/hdpr_deployments
 
    - drivers/orogen/camera_bb2
+   - drivers/orogen/camera_bb3
+   - drivers/camera_basler
+   - drivers/orogen/camera_basler
+
    - perception/orogen/viso2
    - perception/orogen/stereo
+
    - perception/cartographer
    - perception/orogen/cartographer
-
-   # - drivers/camera_basler
-   # - drivers/orogen/camera_basler
+   - slam/grid_map
 
    # - simulation/vrep
    # - simulation/orogen/simulation_vrep

@@ -1,7 +1,6 @@
 version_control:
 
     ### Bundles ###
-
     - bundles/exoter:
       github: exoter-rover/bundles-exoter
       branch: rock-master
@@ -13,18 +12,26 @@ version_control:
       github: geromidg/bundles-dimi
 
     ### Deployments ###
-
     - exoter/orogen/exoter_deployments:
       github: exoter-rover/exoter-orogen-exoter_deployments
 
     - hdpr/orogen/hdpr_deployments:
       github: hdpr-rover/hdpr-orogen-hdpr_deployments
 
-    ### SLAM ###
-
+    ### Drivers ###
     - drivers/orogen/camera_bb2:
       github: rock-drivers/drivers-orogen-camera_bb2
 
+    - drivers/orogen/camera_bb3:
+      github: hdpr-rover/drivers-orogen-camera_bb3
+
+    - drivers/camera_basler:
+      github: geromidg/drivers-camera_basler
+
+    - drivers/orogen/camera_basler:
+      github: geromidg/drivers-orogen-camera_basler
+
+    ### SLAM ###
     - perception/cartographer:
       github: geromidg/perception-cartographer
       branch: local_map_test
@@ -34,7 +41,6 @@ version_control:
       branch: local_map_test
 
     ### Planning ###
-
     - simulation/vrep:
       github: esa-prl/simulation-vrep
 
