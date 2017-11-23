@@ -32,6 +32,15 @@ version_control:
       github: geromidg/drivers-orogen-camera_basler
 
     ### SLAM ###
+    - slam/grid_map:
+      github: geromidg/grid_map
+
+    - slam/ga_slam:
+      github: geromidg/slam-ga_slam
+
+    - slam/orogen/ga_slam:
+      github: geromidg/slam-orogen-ga_slam
+
     - perception/cartographer:
       github: geromidg/perception-cartographer
       branch: local_map_test

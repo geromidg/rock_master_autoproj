@@ -16,6 +16,9 @@ orogen_package "perception/orogen/stereo"
 
 cmake_package "perception/cartographer"
 orogen_package "perception/orogen/cartographer"
+cmake_package "slam/grid_map"
+cmake_package "slam/ga_slam"
+orogen_package "slam/orogen/ga_slam"
 
 cmake_package "simulation/vrep"
 orogen_package "simulation/orogen/simulation_vrep"

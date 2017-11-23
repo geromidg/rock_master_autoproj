@@ -15,8 +15,8 @@ layout:
 
    - drivers/orogen/camera_bb2
    - drivers/orogen/camera_bb3
-   - drivers/camera_basler
-   - drivers/orogen/camera_basler
+   # - drivers/camera_basler
+   # - drivers/orogen/camera_basler
 
    - perception/orogen/viso2
    - perception/orogen/stereo
@@ -24,6 +24,8 @@ layout:
    - perception/cartographer
    - perception/orogen/cartographer
    - slam/grid_map
+   - slam/ga_slam
+   - slam/orogen/ga_slam
 
    # - simulation/vrep
    # - simulation/orogen/simulation_vrep
