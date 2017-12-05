@@ -24,6 +24,7 @@ layout:
    - perception/cartographer
    - perception/orogen/cartographer
    - slam/grid_map
+   - slam/grid_map_cereal
    - slam/ga_slam
    - slam/orogen/ga_slam
 

@@ -32,6 +32,9 @@ version_control:
       github: geromidg/drivers-orogen-camera_basler
 
     ### SLAM ###
+    - slam/grid_map_cereal:
+      github: geromidg/grid_map_cereal
+
     - slam/grid_map:
       github: geromidg/grid_map
 
