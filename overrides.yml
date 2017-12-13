@@ -1,22 +1,8 @@
 version_control:
 
     ### Bundles ###
-    - bundles/exoter:
-      github: exoter-rover/bundles-exoter
-      branch: rock-master
-
-    - bundles/hdpr:
-      github: hdpr-rover/bundles-hdpr
-
-    - bundles/dimi:
-      github: geromidg/bundles-dimi
-
-    ### Deployments ###
-    - exoter/orogen/exoter_deployments:
-      github: exoter-rover/exoter-orogen-exoter_deployments
-
-    - hdpr/orogen/hdpr_deployments:
-      github: hdpr-rover/hdpr-orogen-hdpr_deployments
+    - bundles/ga_slam:
+      github: geromidg/bundles-ga_slam
 
     ### Drivers ###
     - drivers/orogen/camera_bb2:
@@ -25,11 +11,9 @@ version_control:
     - drivers/orogen/camera_bb3:
       github: hdpr-rover/drivers-orogen-camera_bb3
 
-    - drivers/camera_basler:
-      github: geromidg/drivers-camera_basler
-
-    - drivers/orogen/camera_basler:
-      github: geromidg/drivers-orogen-camera_basler
+    ### Perception ###
+    - perception/orogen/gps_transformer:
+      github: geromidg/perception-orogen-gps_transformer
 
     ### SLAM ###
     - slam/grid_map_cereal:
@@ -39,98 +23,14 @@ version_control:
       github: geromidg/grid_map
 
     - slam/ga_slam:
-      github: geromidg/slam-ga_slam
+      github: geromidg/ga_slam
 
     - slam/orogen/ga_slam:
       github: geromidg/slam-orogen-ga_slam
 
-    - perception/cartographer:
-      github: geromidg/perception-cartographer
-      branch: local_map_test
-
-    - perception/orogen/cartographer:
-      github: geromidg/perception-orogen-cartographer
-      branch: local_map_test
-
-    ### Planning ###
-    - simulation/vrep:
-      github: esa-prl/simulation-vrep
-
-    - simulation/orogen/simulation_vrep:
-      github: esa-prl/simulation-orogen-simulation_vrep
-
-    - planning/path_planning:
-      github: esa-prl/planning-path_planning
-      branch: rock_master
-
-    - planning/orogen/path_planning:
-      github: esa-prl/planning-orogen-path_planning
-
-    - control/orogen/locomotion_switcher:
-      github: exoter-rover/control-orogen-locomotion_switcher
-      branch: rock_master
-
-    - control/locomotion_control:
-      github: exoter-rover/control-locomotion_control
-
-    - control/orogen/locomotion_control:
-      github: exoter-rover/control-orogen-locomotion_control
-      # branch: rock_master
-
-    - control/generic_rover_manoeuvre:
-      github: rock-control/control-generic_rover_manoeuvre
-
-    - drivers/platform_driver:
-      github: exoter-rover/drivers-platform_driver
-
-    - drivers/pcan_pcie_mini:
-      type: archive
-      url: http://www.peak-system.com/fileadmin/media/linux/files/peak-linux-driver-7.15.2.tar.gz
-      update_cached_file: false
-
-    - control/orogen/wheelwalking_control:
-      github: exoter-rover/control-orogen-wheelwalking_control
-
-    - exoter/exoter_kinematics:
-      github: exoter-rover/exoter-exoter_kinematics
-
-    - control/kdl_parser:
-      github: rock-control/control-kdl_parser
-
-    - slam/odometry:
-      github: rock-slam/slam-odometry
-
-    - control/orogen/command_arbiter:
-      github: exoter-rover/control-orogen-command_arbiter
-      branch: rock-master
-
-    - control/orogen/slippage_estimator:
-      github: exoter-rover/control-orogen-slippage_estimator
-      branch: rock_master
-
-    - control/orogen/ptu_control:
-      github: exoter-rover/control-orogen-ptu_control
-
-    - control/orogen/motion_translator:
-      github: hdpr-rover/control-orogen-motion_translator
-      branch: rock-master
-
 overrides:
 
-    - drivers/controldev:
-      branch: onedimensional
-
-    - drivers/orogen/controldev:
-      branch: onedimensional
-
-    - control/waypoint_navigation:
-      github: exoter-rover/control-waypoint_navigation
-      branch: rock_master
-
-    - control/orogen/waypoint_navigation:
-      github: exoter-rover/control-orogen-waypoint_navigation
-      branch: rock_master
-
+    ### Perception ###
     - perception/orogen/viso2:
       github: exoter-rover/perception-orogen-viso2
 

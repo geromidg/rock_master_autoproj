@@ -1,51 +1,21 @@
 package_sets:
    - github: rock-core/package_set
    - github: rock-core/rock-package_set
-   - github: rock-simulation/simulation-package_set
 
 layout:
    - rock.core
 
-   # - bundles/exoter
-   # - bundles/hdpr
-   - bundles/dimi
-
-   # - exoter/orogen/exoter_deployments
-   # - hdpr/orogen/hdpr_deployments
+   - bundles/ga_slam
 
    - drivers/orogen/camera_bb2
    - drivers/orogen/camera_bb3
-   # - drivers/camera_basler
-   # - drivers/orogen/camera_basler
 
    - perception/orogen/viso2
    - perception/orogen/stereo
+   - perception/orogen/gps_transformer
 
-   - perception/cartographer
-   - perception/orogen/cartographer
    - slam/grid_map
    - slam/grid_map_cereal
    - slam/ga_slam
    - slam/orogen/ga_slam
-
-   # - simulation/vrep
-   # - simulation/orogen/simulation_vrep
-   # - planning/path_planning
-   # - planning/orogen/path_planning
-   # - control/orogen/locomotion_switcher
-   # - control/locomotion_control
-   # - control/orogen/locomotion_control
-   # - control/generic_rover_manoeuvre
-   # - drivers/platform_driver
-   # - drivers/pcan_pcie_mini
-   # - control/orogen/wheelwalking_control
-   # - exoter/exoter_kinematics
-   # - control/kdl_parser
-   # - slam/odometry
-   # - control/waypoint_navigation
-   # - control/orogen/waypoint_navigation
-   # - control/orogen/command_arbiter
-   # - control/orogen/slippage_estimator
-   # - control/orogen/ptu_control
-   # - control/orogen/motion_translator
 
