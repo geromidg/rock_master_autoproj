@@ -15,6 +15,9 @@ version_control:
     - perception/orogen/gps_transformer:
       github: geromidg/perception-orogen-gps_transformer
 
+    - perception/orogen/pancam_transformer:
+      github: geromidg/perception-orogen-pancam_transformer
+
     ### SLAM ###
     - slam/grid_map_cereal:
       github: geromidg/grid_map_cereal

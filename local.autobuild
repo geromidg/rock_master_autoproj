@@ -6,6 +6,7 @@ orogen_package "drivers/orogen/camera_bb3"
 orogen_package "perception/orogen/viso2"
 orogen_package "perception/orogen/stereo"
 orogen_package "perception/orogen/gps_transformer"
+orogen_package "perception/orogen/pancam_transformer"
 
 cmake_package "slam/grid_map"
 cmake_package "slam/grid_map_cereal"

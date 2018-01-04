@@ -13,6 +13,7 @@ layout:
    - perception/orogen/viso2
    - perception/orogen/stereo
    - perception/orogen/gps_transformer
+   - perception/orogen/pancam_transformer
 
    - slam/grid_map
    - slam/grid_map_cereal
