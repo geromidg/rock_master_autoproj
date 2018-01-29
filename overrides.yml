@@ -19,14 +19,14 @@ version_control:
       github: geromidg/perception-orogen-pancam_transformer
 
     ### SLAM ###
-    - slam/orogen/cloud_preprocessing:
-      github: geromidg/slam-orogen-pcl_io_preprocessing
-
-    - slam/grid_map_cereal:
-      github: geromidg/grid_map_cereal
+    - slam/orogen/orbiter_preprocessing:
+      github: geromidg/slam-orogen-orbiter_preprocessing
 
     - slam/ga_slam:
       github: geromidg/ga_slam
+
+    - slam/ga_slam_cereal:
+      github: geromidg/ga_slam_cereal
 
     - slam/orogen/ga_slam:
       github: geromidg/slam-orogen-ga_slam

@@ -15,8 +15,8 @@ layout:
    - perception/orogen/gps_transformer
    - perception/orogen/pancam_transformer
 
-   - slam/orogen/cloud_preprocessing
-   - slam/grid_map_cereal
+   - slam/orogen/orbiter_preprocessing
    - slam/ga_slam
+   - slam/ga_slam_cereal
    - slam/orogen/ga_slam
 
